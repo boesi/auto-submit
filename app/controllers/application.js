@@ -4,14 +4,14 @@ import { action } from '@ember/object';
 import { validateNumber } from 'ember-changeset-validations/validators';
 
 export default class ApplicationController extends Controller {
-  @tracked item1 = 1;
-  @tracked item2 = 1;
+  @tracked itemAutoSubmit = 1;
+  @tracked itemNoAutoSubmit = 1;
 
   validations = {
-    item1: [
+    itemAutoSubmit: [
       validateNumber({gte: 1, lte: 5})
     ],
-    item2: [
+    itemNoAutoSubmit: [
       validateNumber({gte: 1, lte: 5})
     ],
   };

@@ -1,10 +1,10 @@
 {{page-title "AutoSubmit"}}
 
 <BsForm @model={{changeset this this.validations}} @onSubmit={{this.save}} as |form|>
-  <form.element @label="Auto-Submit" @property="item1" as |el|>
+  <form.element @label="Auto-Submit - look at the console after this field has lost focus" @property="itemAutoSubmit" as |el|>
     <el.control {{on "focusout" form.submit}}/>
   </form.element>
-  <form.element @label="No Auto-Submit" @property="item2" as |el|>
+  <form.element @label="No Auto-Submit - no error message in the console if this field loses focus" @property="itemNoAutoSubmit" as |el|>
     <el.control/>
   </form.element>
 </BsForm>

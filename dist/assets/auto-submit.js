@@ -969,16 +969,16 @@
     constructor() {
       super(...arguments);
 
-      _initializerDefineProperty(this, "item1", _descriptor, this);
+      _initializerDefineProperty(this, "itemAutoSubmit", _descriptor, this);
 
-      _initializerDefineProperty(this, "item2", _descriptor2, this);
+      _initializerDefineProperty(this, "itemNoAutoSubmit", _descriptor2, this);
 
       _defineProperty(this, "validations", {
-        item1: [(0, _validators.validateNumber)({
+        itemAutoSubmit: [(0, _validators.validateNumber)({
           gte: 1,
           lte: 5
         })],
-        item2: [(0, _validators.validateNumber)({
+        itemNoAutoSubmit: [(0, _validators.validateNumber)({
           gte: 1,
           lte: 5
         })]
@@ -991,14 +991,14 @@
       });
     }
 
-  }, (_descriptor = _applyDecoratedDescriptor(_class.prototype, "item1", [_tracking.tracked], {
+  }, (_descriptor = _applyDecoratedDescriptor(_class.prototype, "itemAutoSubmit", [_tracking.tracked], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: function () {
       return 1;
     }
-  }), _descriptor2 = _applyDecoratedDescriptor(_class.prototype, "item2", [_tracking.tracked], {
+  }), _descriptor2 = _applyDecoratedDescriptor(_class.prototype, "itemNoAutoSubmit", [_tracking.tracked], {
     configurable: true,
     enumerable: true,
     writable: true,
@@ -1884,8 +1884,8 @@
   0; //eaimeta@70e063a35619d71f0,"@ember/template-factory"eaimeta@70e063a35619d71f
 
   var _default = (0, _templateFactory.createTemplateFactory)({
-    "id": "ioRIIMMe",
-    "block": "[[[1,[28,[35,0],[\"AutoSubmit\"],null]],[1,\"\\n\\n\"],[8,[39,1],null,[[\"@model\",\"@onSubmit\"],[[28,[37,2],[[30,0],[30,0,[\"validations\"]]],null],[30,0,[\"save\"]]]],[[\"default\"],[[[[1,\"\\n  \"],[8,[30,1,[\"element\"]],null,[[\"@label\",\"@property\"],[\"Auto-Submit\",\"item1\"]],[[\"default\"],[[[[1,\"\\n    \"],[8,[30,2,[\"control\"]],[[4,[38,3],[\"focusout\",[30,1,[\"submit\"]]],null]],null,null],[1,\"\\n  \"]],[2]]]]],[1,\"\\n  \"],[8,[30,1,[\"element\"]],null,[[\"@label\",\"@property\"],[\"No Auto-Submit\",\"item2\"]],[[\"default\"],[[[[1,\"\\n    \"],[8,[30,3,[\"control\"]],null,null,null],[1,\"\\n  \"]],[3]]]]],[1,\"\\n\"]],[1]]]]],[1,\"\\n\\n\\n\"]],[\"form\",\"el\",\"el\"],false,[\"page-title\",\"bs-form\",\"changeset\",\"on\"]]",
+    "id": "eNzdXkuw",
+    "block": "[[[1,[28,[35,0],[\"AutoSubmit\"],null]],[1,\"\\n\\n\"],[8,[39,1],null,[[\"@model\",\"@onSubmit\"],[[28,[37,2],[[30,0],[30,0,[\"validations\"]]],null],[30,0,[\"save\"]]]],[[\"default\"],[[[[1,\"\\n  \"],[8,[30,1,[\"element\"]],null,[[\"@label\",\"@property\"],[\"Auto-Submit - look at the console after this field has lost focus\",\"itemAutoSubmit\"]],[[\"default\"],[[[[1,\"\\n    \"],[8,[30,2,[\"control\"]],[[4,[38,3],[\"focusout\",[30,1,[\"submit\"]]],null]],null,null],[1,\"\\n  \"]],[2]]]]],[1,\"\\n  \"],[8,[30,1,[\"element\"]],null,[[\"@label\",\"@property\"],[\"No Auto-Submit - no error message in the console if this field loses focus\",\"itemNoAutoSubmit\"]],[[\"default\"],[[[[1,\"\\n    \"],[8,[30,3,[\"control\"]],null,null,null],[1,\"\\n  \"]],[3]]]]],[1,\"\\n\"]],[1]]]]],[1,\"\\n\\n\\n\"]],[\"form\",\"el\",\"el\"],false,[\"page-title\",\"bs-form\",\"changeset\",\"on\"]]",
     "moduleName": "auto-submit/templates/application.hbs",
     "isStrictMode": false
   });
